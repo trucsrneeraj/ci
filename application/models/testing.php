@@ -1,5 +1,5 @@
 <?php  
-   class select extends CI_Model  
+   class testing extends CI_Model  
    {  
       function __construct()  
       {  
@@ -7,7 +7,7 @@
          parent::__construct();  
       }  
       //we will use the select function  
-      public function select()  
+      public function test()  
       {  
          //data is retrive from this query  
          $query = $this->db->get('abc');  

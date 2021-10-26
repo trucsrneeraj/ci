@@ -21,8 +21,8 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->database();  
-		$this->load->model('select');  
-		$data['h']=$this->select->select();  
+		$this->load->model('testing');  
+		$data['h']=$this->testing->test();  
 		$this->load->view('welcome_message', $data);  
 		//$this->load->view('welcome_message');
 		
