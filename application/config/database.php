@@ -74,14 +74,14 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
+	// 'dsn'	=> '',
+	'dsn'   => 'pgsql:host=ec2-52-86-123-180.compute-1.amazonaws.com;port=5432;dbname=d9et5uscrfur0k;user=mefoilixurponj;password=e72e573e2482be98c6a0ce5a0194f1562e249c594e403a07c6c97daf48e0b513',
 	'hostname' => 'ec2-52-86-123-180.compute-1.amazonaws.com',
 	'username' => 'mefoilixurponj',
 	'password' => 'e72e573e2482be98c6a0ce5a0194f1562e249c594e403a07c6c97daf48e0b513',
 	'database' => 'd9et5uscrfur0k',
-	'dbdriver' => 'postgres',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
-	'port'=>'5432',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
@@ -93,5 +93,6 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-	'save_queries' => TRUE
+	'save_queries' => TRUE,
+	'port'=>'5432'
 );
