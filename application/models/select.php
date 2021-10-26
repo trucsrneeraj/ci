@@ -10,7 +10,7 @@
       public function select()  
       {  
          //data is retrive from this query  
-         $query = $this->db->get('users');  
+         $query = $this->db->get('abc');  
          return $query;  
       }  
    }  
