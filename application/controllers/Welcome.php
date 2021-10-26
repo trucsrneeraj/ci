@@ -24,7 +24,7 @@ class Welcome extends CI_Controller {
 		// $this->load->model('select');  
 		// $data['h']=$this->select->select();  
 		// $this->load->view('welcome_message', $data);  
-		//$this->load->view('welcome_message');
+		$this->load->view('welcome_message');
 		
 		
 
