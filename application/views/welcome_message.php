@@ -84,6 +84,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
-
+<table border="1">  
+      <tbody>  
+         <tr>  
+            <td>Username</td>  
+            <td>Password</td>  
+         </tr>  
+         <?php  
+         foreach ($h->result() as $row)  
+         {  
+            ?><tr>  
+            <td><?php echo $row->uname;?></td>  
+            <td><?php echo $row->pword;?></td>  
+            </tr>  
+         <?php }  
+         ?>  
+      </tbody>  
+   </table>  
 </body>
 </html>
